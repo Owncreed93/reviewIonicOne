@@ -1,7 +1,17 @@
 <app-header titulo="alert"></app-header>
 
-<ion-content>
-  <ion-button routerLink="/action-sheet">
-    Action Sheet
+<ion-content class="ion-padding">
+  
+  <ion-button (click)="presentAlert()" expand="block" >
+    Click me
   </ion-button>
+
+  <ion-button (click)="presentAlertMultipleButtons()" expand="block" >
+    Multibutton
+  </ion-button>
+
+  <ion-button (click)="presentAlertPrompt()" expand="block" >
+    Input Button
+  </ion-button>
+
 </ion-content>
